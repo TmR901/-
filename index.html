@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドラクエ風RPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="400" height="300"></canvas>
+        <div id="ui-panel">
+            <div id="status">
+                <p>HP: <span id="hp">10</span>/10</p>
+                <p>MP: <span id="mp">5</span>/5</p>
+                <p>レベル: <span id="level">1</span></p>
+                <p>経験値: <span id="exp">0</span></p>
+            </div>
+            <div id="log" class="message-log"></div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+    <script src="map.js"></script>
+    <script src="battle.js"></script>
+    <script src="player.js"></script>
+    <script src="enemy.js"></script>
+</body>
+</html>
